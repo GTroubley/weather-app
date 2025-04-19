@@ -4,29 +4,29 @@
     background: var(--bg-secondary);
     border-radius: .6rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
-    
-    & .title{
-        padding: .5rem;
-        border-radius: 1.2rem;
-        background: var(--bg-secondary);
-        color: var(--text-primary);
-        font-family: "Rubik";
-        font-size: 2rem;
-        font-weight: 600;
-        align-content: center;
+
+    & img{
+        width: 3rem;
+        height: 3rem;
+        background: var(--bg-base);
+        border-radius: 50%;
+        fill:red;
     }
 
     & .search{
         width: 10%;
+        height: 3rem;
         padding: .5rem;
         background: var(--bg-base);
         border-radius: 1.2rem;
         font-family: "Rubik";
         color: var(--text-primary);
         transition: all .4s ease-in-out;
+        display: flex;
+        align-items: center;
 
         &:hover{
             background: #434242;
