@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-base);
+}
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --bg-base: #2f2e2e;
+    --bg-primary: #111015;
+    --bg-secondary: #1a1a1c;
+
+    --text-primary: #edecec;
+    --text-secondary: #a0a0a0;
+}

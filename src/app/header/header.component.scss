@@ -1,0 +1,37 @@
+.mainContainer{
+    width: 100%;
+    padding: .5rem;
+    background: var(--bg-secondary);
+    border-radius: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    
+    & .title{
+        padding: .5rem;
+        border-radius: 1.2rem;
+        background: var(--bg-secondary);
+        color: var(--text-primary);
+        font-family: "Rubik";
+        font-size: 2rem;
+        font-weight: 600;
+        align-content: center;
+    }
+
+    & .search{
+        width: 10%;
+        padding: .5rem;
+        background: var(--bg-base);
+        border-radius: 1.2rem;
+        font-family: "Rubik";
+        color: var(--text-primary);
+        transition: all .4s ease-in-out;
+
+        &:hover{
+            background: #434242;
+            width: 30%;
+        }
+    }
+
+}
