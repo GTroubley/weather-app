@@ -1,0 +1,64 @@
+.mainContainer {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--bg-container);
+    border-radius: 0.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: .125rem;
+    transition: all .5s ease-in-out;
+
+    &:hover{
+        background: var(--bg-container-hover);
+        & .weatherIcon{
+            transform: rotate(180deg);
+        }
+    }
+
+    & .title {
+        font-size: 1.8rem;
+        font-family: "Rubik";
+        color: var(--text-primary);
+    }
+
+    & .subtitle {
+        font-size: 1.1rem;
+        font-family: "Rubik";
+        color: var(--text-secondary);
+    }
+
+    & .weatherIcon {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        transition: all 2s ease-in-out;
+    }
+
+    & .weatherInfo {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: min-content auto;
+
+        & .temperature {
+            width: 100%;
+            font-size: 3rem;
+            font-family: "Rubik";
+            color: var(--text-primary);
+
+            &::after{
+                content: "°C";
+            }
+        }
+
+        & .description {
+            font-size: 1.1rem;
+            font-family: "Rubik";
+            color: var(--text-primary);
+            align-content: center;
+            text-align: right;
+        }
+    }
+}

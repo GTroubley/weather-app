@@ -1,0 +1,9 @@
+<div class="mainContainer">
+    <div class="title">{{this.weatherService.weatherData()?.location?.name}}</div>
+    <div class="subtitle">{{this.weatherService.weatherData()?.location?.region +', '+ this.weatherService.weatherData()?.location?.country}}</div>
+    <img class="weatherIcon" [src]="this.weatherService.weatherData()?.current?.condition?.icon?.replace('64x64', '128x128')" alt="">
+    <div class="weatherInfo">
+        <div class="temperature">{{this.weatherService.weatherData()?.current?.feelslike_c?.toFixed(0)}}</div>
+        <div class="description">{{this.weatherService.weatherData()?.current?.condition?.text}}</div>
+    </div>
+</div>

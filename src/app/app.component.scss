@@ -1,35 +1,29 @@
-.mainContainer{
+.container {
     width: 100%;
     height: 100%;
     background: var(--bg-primary);
-    display: grid;
-    grid-template-rows: min-content auto;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
     padding: 1rem;
 
-    & .body{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: min-content auto;
+    gap: 1rem;
+
+    & > .sideArea {
+        width: 20vw;
+        height: 100%;
+        // background: var(--bg-container);
+        border-radius: 0.6rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    & > .mainArea {
         width: 100%;
         height: 100%;
-        background: var(--bg-secondary);
-        border-radius: .6rem;
-        padding: 1rem;
-
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: min-content auto;
-        gap: 1rem;
-        &> .item1{
-            width: 30vw;
-            height: 100%;
-            background: var(--bg-base);
-            border-radius: .6rem;
-        }
-        &> .item2{
-            width: 100%;
-            height: 100%;
-            background: var(--bg-base);
-            border-radius: .6rem;
-        }
+        background: var(--bg-container);
+        border-radius: 0.6rem;
     }
 }
