@@ -1,0 +1,11 @@
+<div class="mainContainer">
+    <div class="title">Temperatures</div>
+    <div class="list">
+        @for (item of tempList; track item.stage) {
+            <div class="item">
+                <div class="desc">{{item.stage}}</div>
+                <div class="temperature">{{getTemperature(item)}}</div>
+            </div>
+        }
+    </div>
+</div>

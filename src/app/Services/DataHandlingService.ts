@@ -6,7 +6,7 @@ import { WeatherService } from './WeatherService';
 export class DataHandlingService {
     private apiKey = 'key goes here';
     private baseUrl = 'https://api.weatherapi.com/v1/forecast.json?';
-    private location = 'Athens';
+    private location = 'New York';
     private days = '7';
 
     weatherService = inject(WeatherService);

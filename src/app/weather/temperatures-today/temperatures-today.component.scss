@@ -1,0 +1,53 @@
+.mainContainer {
+    width: 100%;
+    padding: 0.5rem;
+    background: var(--bg-container);
+    border-radius: 0.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background: var(--bg-container-hover);
+    }
+
+    & .title {
+        font-size: 1.8rem;
+        font-family: "Rubik";
+        color: var(--text-primary);
+    }
+
+    & .list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        & > .item {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: .5rem;
+
+            & .desc {
+                font-family: "Rubik";
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+            }
+
+            & .temperature {
+                font-family: "Rubik";
+                font-size: 0.8rem;
+                color: var(--text-secondary);
+
+                &::after{
+                    content: "°C";
+                }
+            }
+        }
+    }
+}
