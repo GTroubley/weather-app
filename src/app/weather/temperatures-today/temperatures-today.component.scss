@@ -32,17 +32,29 @@
             flex-direction: column;
             align-items: center;
             gap: .5rem;
+            cursor: pointer;
+
+            &:hover{
+                & .desc{
+                    color: var(--text-primary);
+                }
+                & .temperature{
+                    color: var(--text-primary);
+                }
+            }
 
             & .desc {
                 font-family: "Rubik";
                 font-size: 0.9rem;
                 color: var(--text-secondary);
+                transition: all 0.3s ease-in-out;
             }
 
             & .temperature {
                 font-family: "Rubik";
                 font-size: 0.8rem;
                 color: var(--text-secondary);
+                transition: all 0.3s ease-in-out;
 
                 &::after{
                     content: "°C";
