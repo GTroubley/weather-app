@@ -10,7 +10,7 @@ export class DataHandlingService {
     private days = '7';
 
     weatherService = inject(WeatherService);
-
+    
     constructor() {
         const apiUrl =
             this.baseUrl +
