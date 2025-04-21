@@ -4,6 +4,9 @@ import { DataHandlingService } from './Services/DataHandlingService';
 import { TemperaturesTodayComponent } from "./weather/temperatures-today/temperatures-today.component";
 import { WeatherDateComponent } from "./weather/weather-date/weather-date.component";
 import { WeekForecastComponent } from "./weather/week-forecast/week-forecast.component";
+import { WindOverviewComponent } from "./weather/wind-overview/wind-overview.component";
+import { UvIndexComponent } from "./weather/uv-index/uv-index.component";
+import { SunriseSunsetComponent } from "./weather/sunrise-sunset/sunrise-sunset.component";
 // import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -12,7 +15,10 @@ import { WeekForecastComponent } from "./weather/week-forecast/week-forecast.com
     WeatherNowComponent,
     TemperaturesTodayComponent,
     WeatherDateComponent,
-    WeekForecastComponent
+    WeekForecastComponent,
+    WindOverviewComponent,
+    UvIndexComponent,
+    SunriseSunsetComponent
 ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',

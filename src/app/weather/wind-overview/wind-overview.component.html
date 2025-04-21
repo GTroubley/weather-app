@@ -1,0 +1,10 @@
+<div class="mainContainer">
+    <div class="title">Wind Status</div>
+    <img src="./icons/wind.svg" alt="">
+    <div class="speed">
+        Speed: {{ this.weatherService.weatherData()?.current?.gust_kph }}
+    </div>
+    <div class="direction">
+        Direction: {{ this.weatherService.weatherData()?.current?.wind_dir }}
+    </div>
+</div>

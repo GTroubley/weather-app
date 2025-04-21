@@ -1,0 +1,11 @@
+<div class="mainContainer">
+    <div class="title">Sunrise & Sunset</div>
+    <div class="item">
+        <img src="./icons/sunrise.svg" alt="">
+        <div class="time">Sunrise: {{this.weatherService.weatherData()?.forecast!.forecastday[0].astro.sunrise}}</div>
+    </div>
+    <div class="item">
+        <img src="./icons/sunset.svg" alt="">
+        <div class="time">Sunset: {{this.weatherService.weatherData()?.forecast!.forecastday[0].astro.sunset}}</div>
+    </div>
+</div>
