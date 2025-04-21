@@ -8,6 +8,7 @@
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: min-content auto;
     gap: 1rem;
+    border-radius: 1.2rem;
 
     & > .sideArea {
         width: 20vw;

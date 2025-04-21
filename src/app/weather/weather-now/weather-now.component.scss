@@ -12,9 +12,6 @@
 
     &:hover{
         background: var(--bg-container-hover);
-        & .weatherIcon{
-            transform: rotate(180deg);
-        }
     }
 
     & .title {
@@ -32,8 +29,8 @@
     & .weatherIcon {
         width: 8rem;
         height: 8rem;
-        border-radius: 50%;
         transition: all 2s ease-in-out;
+        animation: pulse 2s infinite;
     }
 
     & .weatherInfo {
@@ -60,5 +57,19 @@
             align-content: center;
             text-align: right;
         }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.85);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
