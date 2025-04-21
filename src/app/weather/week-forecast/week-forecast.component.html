@@ -1,0 +1,9 @@
+<div class="mainContainer">
+    @for (item of this.forecastList; track item) {
+    <div class="forecastDay">
+        <div class="day">{{ getDay(item) | date : "EEE" }}</div>
+        <img class="icon" [src]="getIcon(item)" alt="" />
+        <div class="temperature">{{ getTemperature(item) }}</div>
+    </div>
+    }
+</div>

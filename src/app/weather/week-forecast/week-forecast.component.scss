@@ -1,0 +1,61 @@
+.mainContainer {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    transition: all 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    & > .forecastDay {
+        width: 100%;
+        height: 9rem;
+        background: var(--bg-container);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: .6rem;
+        padding: 1rem;
+        transition: all .5s ease-in-out;
+
+        &:hover{
+            background: var(--bg-container-hover);
+            & .day{
+                font-size: 1.1rem;
+            }
+            .icon{
+                scale: 110%;
+            }
+            & .temperature{
+                font-size: 1.1rem;
+            }
+        }
+
+        & .day {
+            font-family: "Rubik";
+            color: var(--text-secondary);
+            font-size: 1rem;
+            transition: all .5s ease-in-out;
+        }
+
+        & .icon {
+            width: 4rem;
+            height: 4rem;
+            transition: all .5s ease-in-out;
+        }
+
+        & .temperature{
+            font-family: "Rubik";
+            color: var(--text-secondary);
+            font-size: 1rem;
+            transition: all .5s ease-in-out;
+
+            &::after{
+                content: "°C";
+            }
+        }
+    }
+}

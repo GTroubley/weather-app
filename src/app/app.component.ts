@@ -3,6 +3,7 @@ import { WeatherNowComponent } from "./weather/weather-now/weather-now.component
 import { DataHandlingService } from './Services/DataHandlingService';
 import { TemperaturesTodayComponent } from "./weather/temperatures-today/temperatures-today.component";
 import { WeatherDateComponent } from "./weather/weather-date/weather-date.component";
+import { WeekForecastComponent } from "./weather/week-forecast/week-forecast.component";
 // import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,7 +11,8 @@ import { WeatherDateComponent } from "./weather/weather-date/weather-date.compon
     imports: [
     WeatherNowComponent,
     TemperaturesTodayComponent,
-    WeatherDateComponent
+    WeatherDateComponent,
+    WeekForecastComponent
 ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
