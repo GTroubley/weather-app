@@ -1,0 +1,18 @@
+.dateContainer{
+    width: 100%;
+    padding: 0.5rem;
+    // background: var(--bg-container);
+    border-radius: 0.6rem;
+
+    & .monthYear{
+        font-size: 1.8rem;
+        font-family: "Rubik";
+        color: var(--text-primary);
+    }
+
+    & .fulldate{
+        font-size: 1.1rem;
+        font-family: "Rubik";
+        color: var(--text-secondary);
+    }
+}
