@@ -1,6 +1,13 @@
-# WeatherApp
+## WeatherApp
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+**WeatherApp** is my second project built with Angular. It's a simple weather information app that fetches and displays real-time weather data.
+
+- Weather data is sourced from the [WeatherAPI](https://www.weatherapi.com).
+- Weather icons are provided by [SVGRepo](https://www.svgrepo.com).
+- The UI design is based on a layout I found online and adapted for this project.
+
+  ![Screenshot from 2025-04-22 14-37-56](https://github.com/user-attachments/assets/e755c41d-8d62-4834-8675-e1829423353c)
+
 
 ## Development server
 
