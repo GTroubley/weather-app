@@ -7,6 +7,8 @@ import { WeekForecastComponent } from "./weather/week-forecast/week-forecast.com
 import { WindOverviewComponent } from "./weather/wind-overview/wind-overview.component";
 import { UvIndexComponent } from "./weather/uv-index/uv-index.component";
 import { SunriseSunsetComponent } from "./weather/sunrise-sunset/sunrise-sunset.component";
+import { MinorOverviewComponent } from "./weather/minor-overview/minor-overview.component";
+import { WeatherService } from './Services/WeatherService';
 // import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -18,7 +20,8 @@ import { SunriseSunsetComponent } from "./weather/sunrise-sunset/sunrise-sunset.
     WeekForecastComponent,
     WindOverviewComponent,
     UvIndexComponent,
-    SunriseSunsetComponent
+    SunriseSunsetComponent,
+    MinorOverviewComponent
 ],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
@@ -26,4 +29,5 @@ import { SunriseSunsetComponent } from "./weather/sunrise-sunset/sunrise-sunset.
 export class AppComponent {
     title = 'weather-app';
     dataHandlingService = inject(DataHandlingService);
+    weatherService = inject(WeatherService);
 }

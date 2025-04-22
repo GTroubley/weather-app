@@ -4,7 +4,9 @@
         <app-temperatures-today></app-temperatures-today>
         <div class="other">
             <div class="creditsContainer">
-                <a href="https://www.weatherapi.com/" title="Free Weather API">Data by WeatherAPI.com</a>
+                <a href="https://www.weatherapi.com/" title="Free Weather API"
+                    >Data by WeatherAPI.com</a
+                >
             </div>
         </div>
     </div>
@@ -17,6 +19,39 @@
                 <app-wind-overview></app-wind-overview>
                 <app-uv-index></app-uv-index>
                 <app-sunrise-sunset></app-sunrise-sunset>
+                <app-minor-overview
+                    [title]="`Humidity`"
+                    [image]="`./icons/humidity.svg`"
+                    [value]="
+                        this.weatherService
+                            .weatherData()
+                            ?.current?.humidity?.toString()!
+                    "
+                    [unit]="` %`"
+                    [desc]="`The dew point is `+ this.weatherService.weatherData()?.current?.dewpoint_c?.toString()! + `°C right now!`"
+                ></app-minor-overview>
+                <app-minor-overview
+                    [title]="`Visibility`"
+                    [image]="`./icons/visibility.svg`"
+                    [value]="
+                        this.weatherService
+                            .weatherData()
+                            ?.current?.vis_km?.toString()!
+                    "
+                    [unit]="` Km`"
+                    [desc]="`Haze might be affecting the visibility.`"
+                ></app-minor-overview>
+                <app-minor-overview
+                [title]="`Feels Like`"
+                [image]="`./icons/feelslike.svg`"
+                [value]="
+                    this.weatherService
+                        .weatherData()
+                        ?.current?.feelslike_c?.toString()!
+                "
+                [unit]="` °C`"
+                [desc]="`Factors like humidity makes the actual temperature feel like.`"
+            ></app-minor-overview>
             </div>
         </div>
     </div>

@@ -43,6 +43,7 @@ export interface WeatherAPICurrent {
     uv: number;
     gust_mph: number;
     gust_kph: number;
+    dewpoint_c:number;
     air_quality: WeatherAPIAirQuality;
 }
 
